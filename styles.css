@@ -1,0 +1,169 @@
+/*
+Challenge:
+Style the app according to the provided design.
+The font is called "Happy Monkey" and can be
+embedded via Google Fonts.
+
+Don't know how to make an image round? Google it!
+Also, consider how you should select the image 
+(class vs id vs element selector).
+*/
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	background: linear-gradient(
+		180deg,
+		#f5e6be 0%,
+		#d6c49a 25%,
+		#a88e62 50%,
+		#7d653d 75%,
+		#8f6b2d 100%
+	);
+	font-family: Quicksand;
+	text-align: center;
+	color: #2c2c2c;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	margin-top: 40px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: Cinzel;
+}
+
+#profile-pic {
+	width: 180px;
+	border-radius: 50%;
+	border: 8px solid #722f37;
+}
+
+h1 {
+	color: #7c6720;
+	text-shadow: 1px 1px 2px #2c2c2c;
+}
+
+#age,
+#date {
+	background-color: #722f37;
+	color: whitesmoke;
+	padding: 4px;
+	border-radius: 8px;
+	margin: 0 0 12px 0;
+}
+
+/* main section styles*/
+main {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.gift-cover {
+	width: 400px;
+	height: 400px;
+	border: 6px solid transparent;
+	border-radius: 10px;
+
+	background:
+		url('./images/gift.png') no-repeat center / cover padding-box,
+		linear-gradient(#f5e6be, #f5e6be) padding-box,
+		linear-gradient(90deg, #7c6720 0%, #523d19 50%, #722f37 100%) border-box;
+	margin: 0 auto;
+}
+
+#cheers-section {
+	height: 200px;
+	background:
+		url('./images/gift.png') no-repeat top / cover padding-box,
+		linear-gradient(#f5e6be, #f5e6be) padding-box,
+		linear-gradient(90deg, #7c6720 0%, #523d19 50%, #722f37 100%) border-box;
+}
+
+/*--- Gift IDs modifiers ---*/
+#gift-reaction:hover {
+	background:
+		url('./gifs/wizard.gif') no-repeat center / cover padding-box,
+		linear-gradient(#f5e6be, #f5e6be) padding-box,
+		linear-gradient(90deg, #7c6720 0%, #523d19 50%, #722f37 100%) border-box;
+}
+
+#entering-reaction:hover {
+	background:
+		url('./gifs/speed.gif') no-repeat center / cover padding-box,
+		linear-gradient(#f5e6be, #f5e6be) padding-box,
+		linear-gradient(90deg, #7c6720 0%, #523d19 50%, #722f37 100%) border-box;
+}
+
+#chill-reaction:hover {
+	background:
+		url('./gifs/chill.gif') no-repeat center / cover padding-box,
+		linear-gradient(#f5e6be, #f5e6be) padding-box,
+		linear-gradient(90deg, #7c6720 0%, #523d19 50%, #722f37 100%) border-box;
+}
+
+#badass-reaction:hover {
+	background:
+		url('./gifs/larry.gif') no-repeat center / cover padding-box,
+		linear-gradient(#f5e6be, #f5e6be) padding-box,
+		linear-gradient(90deg, #7c6720 0%, #523d19 50%, #722f37 100%) border-box;
+}
+
+#cheers-section:hover {
+	background:
+		url('./gifs/cheers.gif') no-repeat center / cover padding-box,
+		linear-gradient(#f5e6be, #f5e6be) padding-box,
+		linear-gradient(90deg, #7c6720 0%, #523d19 50%, #722f37 100%) border-box;
+}
+
+.gift-title {
+	margin-bottom: 2px;
+}
+
+.gift-hint {
+	margin-bottom: 25px;
+}
+
+.gift-section .second {
+	margin-bottom: 25px;
+}
+
+/* Footer styling */
+footer {
+	padding: 20px;
+}
+
+footer h4 {
+	font-family: Quicksand;
+}
+
+footer h4 a {
+	text-decoration: none;
+	color: #722f37;
+}
+
+footer h4 a:hover {
+	color: #532227;
+}
